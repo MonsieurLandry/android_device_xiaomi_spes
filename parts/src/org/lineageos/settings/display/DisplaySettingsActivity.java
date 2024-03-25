@@ -20,7 +20,7 @@ package org.lineageos.settings.display;
 import android.os.Bundle;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
+import org.lineageos.settings.R;
 
 public class DisplaySettingsActivity extends CollapsingToolbarBaseActivity {
 
