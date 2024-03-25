@@ -20,7 +20,7 @@ import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.android.settingslib.collapsingtoolbar.CollapsingToolbarBaseActivity;
-import com.android.settingslib.widget.R;
+import org.lineageos.settings.R;
 
 public class RefreshActivity extends CollapsingToolbarBaseActivity {
 
