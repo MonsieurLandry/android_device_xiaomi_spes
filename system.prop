@@ -36,6 +36,7 @@ debug.sf.enable_hwc_vds=1
 persist.demo.hdmirotationlock=false
 
 # FP
+sys.fp.miui.token=0
 ro.hardware.fp.sideCap=true
 
 # Fwk detect
