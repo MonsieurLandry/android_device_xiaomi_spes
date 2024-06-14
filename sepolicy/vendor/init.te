@@ -6,9 +6,12 @@ allow init hwservicemanager:binder { call transfer };
 allow init nfc:binder call;
 allow init proc:file write;
 allow init proc_last_kmsg:file { r_file_perms setattr };
-allow init proc_tp_gesture:file rw_file_perms;
 allow init same_process_hal_file:file execute;
 allow init sysfs:file setattr;
-allow init sysfs_android_usb:file rw_file_perms;
-allow init sysfs_devices_block:file write;
 allow init vendor_file:file execute;
+
+allow init {
+  proc_tp_gesture
+  sysfs_android_usb
+  sysfs_devices_block
+}:file rw_file_perms;
