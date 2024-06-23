@@ -14,6 +14,9 @@ else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression_with_xor.mk)
 endif
 
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
+
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
 
