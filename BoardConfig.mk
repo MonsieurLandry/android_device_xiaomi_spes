@@ -118,7 +118,6 @@ DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/hidl/manifest.xml
 ODM_MANIFEST_SKUS += k7tn
 ODM_MANIFEST_K7TN_FILES := $(DEVICE_PATH)/configs/hidl/manifest_k7tn.xml
 
-
 # IMS
 BOARD_USES_LEGACY_IMS_SEPOLICY := true
 
@@ -243,9 +242,6 @@ include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/legacy-um/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
-ifdef CR_VERSION
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private-cr
-endif
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
